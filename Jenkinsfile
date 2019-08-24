@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Building...'
+        echo 'Building....'
       }
     }
     stage('Test Firefox') {
@@ -15,19 +15,19 @@ pipeline {
         }
         stage('Test Chrome') {
           steps {
-            sh 'echo \'Testing Chrome\''
+            sh 'echo \'Testing Chrome...\''
           }
         }
         stage('Test Edge') {
           steps {
-            sh 'echo \'Testing Edge\''
+            sh 'echo \'Testing Edge....\''
           }
         }
       }
     }
     stage('Deploy') {
       steps {
-        echo 'Deploy'
+        echo 'Deploying.....'
       }
     }
   }
